@@ -17,3 +17,15 @@ __*I sent all of these options to my teammates and told them to scan through the
 
 
 __*The main reason I chose React besides wanting to explore more visulization libraries, is because I wanted to break up each team members findings into components.  I felt personally it was the best way to stay organized, and to not fight with random raw html files floating around.  I was also able to implement this User Interface utilizing npm (Node Package Manager) in order to find re-usable components that others have open sourced, and I could quickly install them and implement whatever I needed.*__
+
+---
+
+### Redeploy Application (Note this was developed locally on a Windows Machine, and VS code)
+1. Clone to repository: `git clone git@github.com:jdwdm3/Capstone-Ui.git`
+2. Change into the repositories directory `cd Capstone-Ui` (Or open using Vs code, and use VS code terminal for next step)
+3. Install all dependencies from the package.json: `npm install` (You should now see `node_modules` directory added to root level of the project)
+4. TO RUN THE PROJECT LOCALLY: `npm run start` (This will launch your default web browser, and automatically populate `localhost:3000` in the URL)
+5. As long as the AWS CLI instructions have been followed, you will have the ability to deploy this application to the S3 bucket acting as our Production enviorment.
+6. Kill the process, and run `npm run build`.  This will create all the static files needed to be pushed to the S3 bucket to serve the applicaiton upon request of the S3 buckets URL.
+7. run `npm run deploy` to deploy the files that were created when running `build`
+8. As long as the instructions for the API have been followed as well (https://github.com/jdwdm3/Capstone-Api), the application should be accessable from http://capstone-app.s3-website-us-east-1.amazonaws.com/ and running as intended.
