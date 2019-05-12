@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/image6.dd39609b.png"
   },
   {
-    "revision": "b7eff2e4a795bb3b8c82",
-    "url": "/static/css/main.55902b5c.chunk.css"
+    "revision": "65b5337b4ac3debe4a10",
+    "url": "/static/css/main.2625c6c4.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/static/media/prates_legal.bd481a50.png"
   },
   {
-    "revision": "add4e0647d91ee476ae0",
+    "revision": "ca1b314109d3dafbc757",
     "url": "/static/js/2.c92e59b5.chunk.js"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/image5.47114d4a.png"
   },
   {
-    "revision": "b7eff2e4a795bb3b8c82",
-    "url": "/static/js/main.bbf1c6cb.chunk.js"
+    "revision": "65b5337b4ac3debe4a10",
+    "url": "/static/js/main.e0f0348f.chunk.js"
   },
   {
     "revision": "730b12172d803d639d42ce7f5fa84ab1",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/static/media/prates_illegal.0d78661d.png"
   },
   {
-    "revision": "add4e0647d91ee476ae0",
-    "url": "/static/css/2.b353e639.chunk.css"
+    "revision": "ca1b314109d3dafbc757",
+    "url": "/static/css/2.f542a123.chunk.css"
   },
   {
-    "revision": "09b7484064a64e0aec9db5d81bd2d815",
+    "revision": "7c9839272128055f26d57ae1231bf6e0",
     "url": "/index.html"
   }
 ];
