@@ -35,14 +35,14 @@ __*The main reason I chose React besides wanting to explore more visulization li
 
 #### Application Structure
 ##### Components:
-1. Context
-2. KaiMarijuana
-3. LandingPage
-4. MannyExample
-5. NicoleDemographics
-6. OpioidCrisis
-7. OrganDonor
-8. SideBar
+1. src/components/Context
+2. src/components/KaiMarijuana
+3. src/components/LandingPage
+4. src/components/MannyExample
+5. src/components/NicoleDemographics
+6. src/components/OpioidCrisis
+7. src/components/OrganDonor
+8. src/components/SideBar
 
 __*Each component at the highest level in the file structure as listed above was supposed to be a 1-1 representation of each team members analytical findings. Landing Page, Sidebar, and Context are all components that are utilized by everyones page. Lets talk about `Context`, as it has extremely heavy relevance to how data is stored in state during the applications time running.*__
 
