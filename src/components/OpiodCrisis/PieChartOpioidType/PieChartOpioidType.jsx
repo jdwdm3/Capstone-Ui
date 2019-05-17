@@ -7,6 +7,10 @@ import { Prescription } from '../CrisisLineChart'
 import { Heroin } from '../CrisisLineChart'
 import { PieChartFentanyl } from '../PieChartFentanyl'
 
+// This component was used to create those pie charts, that show the increase in Fentanyl deaths over time.
+
+
+// Grabs the data by year to throw onto a pie chart
 const grabDataByYear = (date) => {
 
   const sythetic = Sythetic.filter( item => {
@@ -26,6 +30,8 @@ const grabDataByYear = (date) => {
   return([['Type Of Opioid','Deaths Per 100,000'],sythetic_,prescription_,heroin_])
 
 }
+
+//Pie chart to display final data
 
 export const PieChartOpioidType = (props) => {
     const {date} = props

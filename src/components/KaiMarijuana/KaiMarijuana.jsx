@@ -6,6 +6,8 @@ import { GlobalContext } from '../Context/GlobalContext';
 import { convertAbbreviationtoState } from './convertAbberviationToState';
 const apiKey = 'AIzaSyBqNG9kYP2yxI3D0h9roxhM7rtUwyU373s'
 
+
+//Converts JSON data to List of list: [{}] ==> [[]] 
 const reformatLegalMarjiuanaStatesJsonToLists = (legalMarjiuanaStates,legal) => {
     let finalList = []
     let miniList = []
@@ -23,6 +25,7 @@ const reformatLegalMarjiuanaStatesJsonToLists = (legalMarjiuanaStates,legal) => 
     return finalList
 }
 
+//Converts JSON data to List of list: [{}] ==> [[]] 
 const reformatLegalMarjiuanaStatesOdInfoJsonToLists = data => {
     let finalList = []
     let miniList = []
@@ -42,6 +45,7 @@ const reformatLegalMarjiuanaStatesOdInfoJsonToLists = data => {
     return finalList
 }
 
+//Used to calculate the percentage change from our given data of overdoses over the three year span
 const clalculatePercentageChange = data => {
 
     let percentageData = [['US-States', 'Percentage Change in Number of Overdoses']] 
@@ -63,6 +67,7 @@ const clalculatePercentageChange = data => {
     return percentageData
 }
 
+// This function AVERAGES out the state level changes to give us insight on the overall picture
 const calculateAveragePercentageChange = data => {
 
     let total18 = 0
@@ -80,6 +85,26 @@ const calculateAveragePercentageChange = data => {
 
     return percentageDifference
 }
+
+
+/*
+
+    Kai's component was built as an HTML wrapper to deliver visulizations surrounded marijuana data at the state level. 
+
+    Below you will find this component grabbing data out of Context, and using a few helper functions above to clean the data in a manor that
+    allows us to get some kind of idea about how marijuana has effected opioid deaths.
+
+    Majority of the formatting was done of the API, but some basic caluclations were done above.
+
+    The format goes as follows:
+
+    <CARD FOR TITLES>
+
+    <VISULIZAIONS> 
+
+    in most cases
+
+*/
 
 export const KaiMarijuana = () => {
     //Pulling values out of global state, Data read from API (CentOS)

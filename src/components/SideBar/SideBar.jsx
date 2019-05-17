@@ -8,6 +8,8 @@ import { GlobalContext } from '../Context/GlobalContext'
 import { PageEnums } from '../../types/PageEnums';
 
 
+//Side bar used to change views and power switch statement on landing page
+
 export const SideBar = () => {
     const { state: {sidebarOpen}} = useContext(GlobalContext)
     const { stateModifiers: {setSidebarOpen}} = useContext(GlobalContext)

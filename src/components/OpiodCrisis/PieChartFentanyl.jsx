@@ -9,6 +9,12 @@ const rollAnimation = keyframes`${rollIn}`
 const RollyChart = styled(Chart)`
   animation: 3s ${rollAnimation};
 `
+/*
+
+    Jeremy's component was built to show the increase in fentanyl deaths
+
+
+*/
 
 export const PieChartFentanyl = (props) => {
   const {pieChartData} = props

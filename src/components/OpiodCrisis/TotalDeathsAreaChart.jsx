@@ -1,6 +1,17 @@
 import React from 'react';
 import Chart from 'react-google-charts';
 
+/*
+
+    Jeremy's component was built to show TOTAL deaths
+
+    NOTE: The data in this component is hard coded because I was having issues with the API for a week+ 
+
+    I was able to resolve those issues to finish the other views, but with limited time I went ahead
+    and began working on my views by computing the list of lists below in python scripts.
+
+*/
+
 export const TotalDeathsAreaChart = () => {
   return (
     <Chart

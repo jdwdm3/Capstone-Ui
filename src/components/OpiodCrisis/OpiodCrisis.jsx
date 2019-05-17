@@ -9,7 +9,11 @@ import { YearEnum } from '../../types/YearEnums'
 import { SideBar}  from '../SideBar/SideBar'
 import { RaceDeaths } from './RaceDeaths';
 
+/*
 
+    Jeremy's main component that renders all of the other components inside of this Opioid crisis directory
+
+*/
 
 export const OpioidDeathByType = () => {
   const { state: {year}, stateModifiers: {setYear}} = useContext(GlobalContext)

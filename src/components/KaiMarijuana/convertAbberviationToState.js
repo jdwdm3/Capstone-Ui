@@ -1,3 +1,8 @@
+/*
+    This function is used to clean some of the state level data we had.  We needed abriviations instead of full names, and this was
+    one of the easiest ways to convert.
+*/
+
 export const convertAbbreviationtoState = (input) => {
     
     var states = [

@@ -4,6 +4,8 @@ import { SideBar } from '../SideBar/SideBar';
 import { Card, CardContent } from '@material-ui/core';
 import { GlobalContext } from '../Context/GlobalContext';
 
+
+// Helper function that computes the percentage of opioids prescribed
 const getPercentageData = data => {
   let percentageData = [["State", "Percentage of Opioids Prescribed"]]
   let miniList = []
@@ -16,6 +18,25 @@ const getPercentageData = data => {
   }
   return percentageData
 }
+
+/*
+
+    Manny's component was built as an HTML wrapper to deliver visulizations surrounded marijuana data at the state level. 
+
+    Below you will find this component grabbing data out of Context, and using a few helper functions above to clean the data in a manor that
+    allows us to get some kind of idea about how marijuana has effected opioid deaths.
+
+    Majority of the formatting was done of the API, but some basic caluclations were done above.
+
+    The format goes as follows:
+
+    <CARD FOR TITLES>
+
+    <VISULIZAIONS> 
+
+    in most cases
+
+*/
 
 export const MannyExample = () => {
     const { state: {MannysPerscriptionNumbers, MannysPrescriptionRatesByState, MannysPrescriptionRatesBySpecialty}} = useContext(GlobalContext)

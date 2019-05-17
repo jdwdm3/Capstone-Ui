@@ -17,6 +17,15 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { OrganDoner } from '../OrganDoner/OrganDoner'
 import { NicolesFindings } from '../NicoleDemographics/NicolesFindings'
 
+/*
+
+  This page allows us to use the sidebar, and on a click decides what value to set in state that will determine which of our major
+  components is rendered.
+
+  determinePage is the method that accomplishes this.
+  
+*/
+
 const LandingPage = ({classes}) => {
   const { state: {activePage}} = useContext(GlobalContext)
   const open = true

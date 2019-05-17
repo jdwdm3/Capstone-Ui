@@ -4,6 +4,17 @@ import { GlobalContext } from '../Context/GlobalContext'
 import { YearEnum } from '../../types/YearEnums'
 const apiKey = 'AIzaSyBqNG9kYP2yxI3D0h9roxhM7rtUwyU373s'
 
+/*
+
+    Jeremy's component was built to show the increase in opioid deaths over time.
+
+    NOTE: The data in this component is hard coded because I was having issues with the API for a week+ 
+
+    I was able to resolve those issues to finish the other views, but with limited time I went ahead
+    and began working on my views by computing the list of lists below in python scripts.
+
+*/
+
 export const FentanylMap = () => {
     const { state: {year}} = useContext(GlobalContext)
 

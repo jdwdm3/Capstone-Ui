@@ -1,6 +1,7 @@
 import React from 'react'
 import PieChartOpioidType from './PieChartOpioidType/PieChartOpioidType'
 
+//Component used to render the pie charts
 export const CardsCrisis = () => {
     return (
     <div style={{display: 'flex', paddingLeft: '175px'}}>

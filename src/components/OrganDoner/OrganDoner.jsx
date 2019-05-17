@@ -13,7 +13,15 @@ import image6 from './image6.png'
 import image7 from './image7.png'
 import image8 from './image8.png'
 
+/*
 
+    Travis's component was built to show the impace of opioids on Organ Donation
+
+    NOTE: There are mainly static images due to lack of time to create all of the visulizations that Travis already did himself.
+
+    With limited time, we didnt want to reinvent the wheel and decided screenshots were sufficient for a few of his charts.
+
+*/
 
 const formatTravisData = data => {
 
